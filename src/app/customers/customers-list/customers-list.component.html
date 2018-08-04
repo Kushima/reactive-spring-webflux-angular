@@ -1,5 +1,11 @@
 <br/>
-<div *ngFor="let customer of customers$ | async" style="width: 300px;">
+<div class="row header">
+	<div class="col-sm-3">NOME</div>
+	<div class="col-sm-3">IDADE</div>
+	<div class="col-sm-3">ATIVO</div>
+</div>
+
+<div *ngFor="let customer of customers$ | async">
 	<customer-details [customer]='customer'></customer-details>
 </div>
 
